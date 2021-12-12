@@ -21,11 +21,12 @@ import java.time.LocalDate;
  * @author 145299 (Proxy Product Owner)
  * @author 144629
  * @author 145357
- * @version 1.1
+ * @version 1.0.2
  * @since 1.0
+ * @param File - "Json.json"
  *
  * <p>
- * Dlampoprawy wygody można dodać możliwość wpisania przez użytkownika jakiego pliku
+ * Dla poprawy wygody można dodać możliwość wpisania przez użytkownika jakiego pliku
  * chcemy dokonać redukcji.
  */
 

@@ -1,9 +1,5 @@
 package pl.put.poznan.transformer.app;
 
-/*
- * Jako programista mogę uzyskać pełną strukturę w formacie JSON ze zminifikowanego zapisu w formacie JSON, aby polepszyć czytelność danych.
- */
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -14,7 +10,31 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/*
+ * Jako programista mogę uzyskać pełną strukturę w formacie JSON ze zminifikowanego zapisu w formacie JSON, aby polepszyć czytelność danych
+ * <p>
+ * Program pobiera plik Json (MinJson.json) i dzięki biblioteki gson i klasy GsonBuilder
+ * jesteśmy w stanie odtworzyć zminifikowany plik JSON do przyjrzystej
+ * i czytelnej dla człowieka struktury.
+ *
+ * @author 144493 (Scrum Master)
+ * @author 145299 (Proxy Product Owner)
+ * @author 144629
+ * @author 145357
+ * @version 1.0.2
+ * @since 1.0
+ * @param File - "MinJson.json"
+ *
+ * <p>
+ * Dla poprawy wygody można dodać możliwość wpisania przez użytkownika jakiego pliku
+ * chcemy dokonać transformacji do pełnej struktury pliku JSON.
+ */
+
 public class CompressedToFullJSON {
+
+    /*
+     * Transformacha pliku JSON na czytelny
+     */
 
     public void test() {
         try {

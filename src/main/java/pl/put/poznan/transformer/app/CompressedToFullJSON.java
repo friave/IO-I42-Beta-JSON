@@ -35,10 +35,11 @@ public class CompressedToFullJSON {
     /*
      * Transformacha pliku JSON na czytelny
      */
+	private String file = "MinJson.json";
 
-    public void test() {
+    public void Compression() {
         try {
-            JSONObject jsonDoc = (JSONObject) JSONValue.parse(new FileReader("MinJson.json"));
+            JSONObject jsonDoc = (JSONObject) JSONValue.parse(new FileReader(file));
             // System.out.println(jsonDoc);
 
             Gson gson = new GsonBuilder().setPrettyPrinting().create();

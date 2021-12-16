@@ -8,11 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TextTransformerApplication {
 
     public static void main(String[] args) {
-        CompressedToFullJSON test1 = new CompressedToFullJSON();
-        test1.test();
+        CompressedToFullJSON comp = new CompressedToFullJSON();
+        comp.Compression();
 
-        FullToCompressedJSON test2 = new FullToCompressedJSON();
-        test2.test();
+        FullToCompressedJSON full = new FullToCompressedJSON();
+        full.Uncompression();
+		
         SpringApplication.run(TextTransformerApplication.class, args);
     }
 }

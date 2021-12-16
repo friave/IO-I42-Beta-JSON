@@ -35,9 +35,11 @@ public class FullToCompressedJSON {
     /*
      * Minimalizacja rozmiaru pliku JSON
      */
-    public void test() {
+	private String file = "Json.json";
+	 
+    public void Uncompression() {
         try {
-            JSONObject jsonDoc = (JSONObject) JSONValue.parse(new FileReader("Json.json"));
+            JSONObject jsonDoc = (JSONObject) JSONValue.parse(new FileReader(file));
             // System.out.println(jsonDoc);
 
             FileWriter file = new FileWriter("MinJson.json");

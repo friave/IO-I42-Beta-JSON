@@ -13,7 +13,8 @@ import java.io.IOException;
 /*
  * Jako programista mogę uzyskać pełną strukturę w formacie JSON ze zminifikowanego zapisu w formacie JSON, aby polepszyć czytelność danych
  * <p>
- * Program pobiera plik Json (MinJson.json) i dzięki biblioteki gson i klasy GsonBuilder
+ * Program pobiera plik Json (MinJson.json) z naszej klasy głównej
+ *  i dzięki biblioteki gson i klasy GsonBuilder
  * jesteśmy w stanie odtworzyć zminifikowany plik JSON do przyjrzystej
  * i czytelnej dla człowieka struktury.
  *
@@ -33,13 +34,17 @@ import java.io.IOException;
 public class CompressedToFullJSON {
 
     /*
+     * @param base - Agregacja głównej klasy przechowującej plik do odczytu.
+     */
+    private JSONBase base;
+
+    /*
      * Transformacha pliku JSON na czytelny
      */
-	private String file = "MinJson.json";
-
     public void Compression() {
         try {
-            JSONObject jsonDoc = (JSONObject) JSONValue.parse(new FileReader(file));
+            base = new JSONBase("MinJson.json");
+            JSONObject jsonDoc = (JSONObject) JSONValue.parse(base.getJSON());
             // System.out.println(jsonDoc);
 
             Gson gson = new GsonBuilder().setPrettyPrinting().create();

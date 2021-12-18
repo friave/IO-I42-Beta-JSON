@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="" />
+    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/JSONTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/pl/put/poznan/transformer/app/TextTransformerApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/pl/put/poznan/transformer/app/TextTransformerApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/pl/put/poznan/transformer/app/class-use/TextTransformerApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/pl/put/poznan/transformer/app/class-use/TextTransformerApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/CompressedToFullJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/CompressedToFullJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/FullToCompressedJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/FullToCompressedJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/JSONBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/JSONBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/JSONTransformerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/TextTransformer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/TextTransformerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/CompressedToFullJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/CompressedToFullJSON.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/FullToCompressedJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/FullToCompressedJSON.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/JSONBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/JSONBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/TextTransformerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/TextTransformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/TextTransformerController.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,18 +43,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="ioprojectarchitecture/invalid/Spring" />
+    </ignored-facets>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1552" />
@@ -42,6 +72,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer" />
@@ -59,14 +92,8 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration name="TextTransformerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.TextTransformerApplication" />
+    <configuration name="JSONTransformerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.JSONTransformerApplication" />
       <module name="ioprojectarchitecture" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -101,9 +128,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TextTransformerApplication" />
+        <item itemvalue="Application.JSONTransformerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -126,30 +162,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="221" y="43" key="#Project_Structure" timestamp="1606660679896">
-      <screen x="26" y="23" width="1414" height="877" />
-    </state>
-    <state x="221" y="43" key="#Project_Structure/26.23.1414.877/1440.-97.1920.1080@26.23.1414.877" timestamp="1606660679896" />
-    <state width="1373" height="230" key="GridCell.Tab.0.bottom" timestamp="1606661138771">
-      <screen x="26" y="23" width="1414" height="877" />
-    </state>
-    <state width="1373" height="230" key="GridCell.Tab.0.bottom/26.23.1414.877/1440.-97.1920.1080@26.23.1414.877" timestamp="1606661138771" />
-    <state width="1373" height="230" key="GridCell.Tab.0.center" timestamp="1606661138770">
-      <screen x="26" y="23" width="1414" height="877" />
-    </state>
-    <state width="1373" height="230" key="GridCell.Tab.0.center/26.23.1414.877/1440.-97.1920.1080@26.23.1414.877" timestamp="1606661138770" />
-    <state width="1373" height="230" key="GridCell.Tab.0.left" timestamp="1606661138769">
-      <screen x="26" y="23" width="1414" height="877" />
-    </state>
-    <state width="1373" height="230" key="GridCell.Tab.0.left/26.23.1414.877/1440.-97.1920.1080@26.23.1414.877" timestamp="1606661138769" />
-    <state width="1373" height="230" key="GridCell.Tab.0.right" timestamp="1606661138770">
-      <screen x="26" y="23" width="1414" height="877" />
-    </state>
-    <state width="1373" height="230" key="GridCell.Tab.0.right/26.23.1414.877/1440.-97.1920.1080@26.23.1414.877" timestamp="1606661138770" />
-    <state x="221" y="43" key="SettingsEditor" timestamp="1606660905588">
-      <screen x="26" y="23" width="1414" height="877" />
-    </state>
-    <state x="221" y="43" key="SettingsEditor/26.23.1414.877/1440.-97.1920.1080@26.23.1414.877" timestamp="1606660905588" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

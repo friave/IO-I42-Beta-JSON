@@ -1,21 +1,17 @@
 package pl.put.poznan.transformer.app;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import com.google.gson.*;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+
 
 /*
  * Jako programista mogę uzyskać pełną strukturę w formacie JSON ze zminifikowanego zapisu w formacie JSON, aby polepszyć czytelność danych
  * <p>
- * Program pobiera plik Json (MinJson.json) z naszej klasy głównej
- *  i dzięki biblioteki gson i klasy GsonBuilder
- * jesteśmy w stanie odtworzyć zminifikowany plik JSON do przyjrzystej
+ * Program pobiera łańcuch znaków w formacie zgodnym z JSON z naszej klasy głównej
+ *  i dzięki bibliotece gson i klasy GsonBuilder
+ * jesteśmy w stanie odtworzyć zminifikowaną strukturę JSON do przyjrzystej
  * i czytelnej dla człowieka struktury.
  *
  * @author 144493 (Scrum Master)
@@ -25,39 +21,31 @@ import java.io.IOException;
  * @version 1.0.2
  * @since 1.0
  * @param File - "MinJson.json"
- *
- * <p>
- * Dla poprawy wygody można dodać możliwość wpisania przez użytkownika jakiego pliku
- * chcemy dokonać transformacji do pełnej struktury pliku JSON.
  */
 
 public class CompressedToFullJSON {
 
     /*
-     * @param base - Agregacja głównej klasy przechowującej plik do odczytu.
+     * @param base - Agregacja głównej klasy przechowującej strukturę JSON.
      */
     private JSONBase base;
 
     /*
-     * Transformacha pliku JSON na czytelny
+     * Transformacha struktury JSON na czytelną
      */
-    public void Compression() {
+    public String uncompression(String compressed) {
         try {
-            base = new JSONBase("MinJson.json");
+            base = new JSONBase(compressed);
             JSONObject jsonDoc = (JSONObject) JSONValue.parse(base.getJSON());
             // System.out.println(jsonDoc);
 
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             JsonElement je = JsonParser.parseString(String.valueOf(jsonDoc));
-            String prettyJsonString = gson.toJson(je);
 
-            FileWriter file = new FileWriter("MaxJson.json");
-            file.write(prettyJsonString);
-            file.flush();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+            return gson.toJson(je);
+        } catch (Exception e) {
             e.printStackTrace();
         }
+        return "Invalid JSON!";
     }
 }

@@ -15,19 +15,18 @@ public class FullToCompressedController {
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> get(String text) {
         //pass
+        logger.error("No GET method yet in minify");
         return ResponseEntity.ok().build();
 
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public ResponseEntity<?> post(@RequestBody String text, @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
+    public ResponseEntity<?> post(@RequestBody String text) {
 
-        // log the parameters
-        //logger.debug(text);
-
-        JSONTransformer converter = new JSONTransformer(transforms);
+        JSONTransformer converter = new JSONTransformer();
         String output = converter.compress(text);
-        System.out.println(output);
+        logger.info("Minification succesfull");
+        logger.debug("Minified JSON: {}", output);
         return ResponseEntity.ok(output);
     }
 

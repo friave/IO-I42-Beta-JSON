@@ -13,7 +13,10 @@ public class TextTransformerApplication {
 
         FullToCompressedJSON full = new FullToCompressedJSON();
         full.Uncompression();
-		
+
+        JsonOnlySpecificValues specified = new JsonOnlySpecificValues();
+        specified.Specify();
+
         SpringApplication.run(TextTransformerApplication.class, args);
     }
 }

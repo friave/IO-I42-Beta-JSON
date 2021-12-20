@@ -1,11 +1,12 @@
 package pl.put.poznan.transformer.app;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
 
 /*
  * <p>
- * Głowna klasa przechowująca wybrany przez nas plik. Służy do zaimplementowania
+ * Głowna klasa przechowująca wybraną przez nas strukturę JSON. Służy do zaimplementowania
  * wzorca projektowego 'dekorator'.
  *
  * <p>
@@ -22,23 +23,36 @@ import java.io.FileReader;
 public class JSONBase {
 
     /*
-     * @param json - przechowuje plik do odczytu
+     * @param json - przechowuje strukturę JSON do odczytu
      */
-    private FileReader json;
+    private String json;
 
     /*
      * Podstawowe wczytanie pliku do zmiennej
      */
-    public JSONBase(String file) {
-        try {
-            json = new FileReader(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+    public JSONBase(String text) {
+        if(isJSONValid(text)){
+            try {
+                json = text;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
+    /*
+     * Sprawdza czy wejściowa stuktura JSON jest poprawna
+     */
+    public boolean isJSONValid(String test) {
+        try {
+            JSONObject testJson = (JSONObject) JSONValue.parse(test);
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
+    }
 
-    public FileReader getJSON() {
+    public String getJSON() {
         return json;
     }
 
